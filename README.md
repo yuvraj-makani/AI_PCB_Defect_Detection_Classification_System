@@ -2,6 +2,7 @@ PCB DIFFERENTIAL DEFECT DETECTION SYSTEM
 
 A deep learning–based PCB defect detection system that combines classical image comparison techniques with CNN-based classification to accurately identify manufacturing defects on Printed Circuit Boards (PCBs).
 This project is developed as part of an industry internship and focuses on building an end-to-end AI pipeline including model training, inference, and a user-friendly web interface.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KEY FEATURES
 
@@ -22,11 +23,17 @@ SYSTEM ARCHITECTURE
 
 The system follows a two-stage hybrid approach:
 1️. Differential Comparison (Classical Computer Vision)
+
    a) Perceptual Hashing (pHash)
+   
    b) Structural Similarity Index (SSIM)
+   
    c) Identifies suspicious regions by comparing input PCB with a golden reference PCB
+   
 2️. Deep Learning Classification
+
    a) CNN-based model (EfficientNet-B0 / ResNet-50)
+   
    b) Classifies the detected abnormal regions into defect categories
    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
