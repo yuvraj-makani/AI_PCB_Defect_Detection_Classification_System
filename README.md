@@ -59,8 +59,6 @@ Website/
 
 ├── inference_new.py           # Inference & detection pipeline
 
-Data prep
-
 |── image processing.ipynb     # Data prep & image processing
 
 Model/
