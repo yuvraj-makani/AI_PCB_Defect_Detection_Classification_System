@@ -2,7 +2,6 @@ PCB DIFFERENTIAL DEFECT DETECTION SYSTEM
 
 A deep learning–based PCB defect detection system that combines classical image comparison techniques with CNN-based classification to accurately identify manufacturing defects on Printed Circuit Boards (PCBs).
 This project is developed as part of an industry internship and focuses on building an end-to-end AI pipeline including model training, inference, and a user-friendly web interface.
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KEY FEATURES
 
@@ -22,6 +21,7 @@ KEY FEATURES
 SYSTEM ARCHITECTURE
 
 The system follows a two-stage hybrid approach:
+
 1️. Differential Comparison (Classical Computer Vision)
 
    a) Perceptual Hashing (pHash)
@@ -29,6 +29,7 @@ The system follows a two-stage hybrid approach:
    b) Structural Similarity Index (SSIM)
    
    c) Identifies suspicious regions by comparing input PCB with a golden reference PCB
+   
    
 2️. Deep Learning Classification
 
@@ -53,15 +54,24 @@ TECH STACK
 PROJECT STRUCTURE
 
 Website/
-├── app.py                     # Streamlit web application
+
+├── app.py  
+# Streamlit web application
+
 ├── inference_new.py           # Inference & detection pipeline
 
 Data prep
+
 |── image processing.ipynb     # Data prep & image processing
 
 Model/
-|── model.ipynb                # Model Training
-|── Inference.ipynb            # Model Testing
+
+|── model.ipynb  
+# Model Training
+
+|── Inference.ipynb 
+# Model Testing
+
 
 |── README.md
 
@@ -69,22 +79,34 @@ Model/
 INSTALLATION & SETUP
 
 1. Clone the repository:
+   
    git clone https://github.com/yuvraj-makani/pcb-defect-detection.git
+   
    cd pcb-defect-detection
 
-2. Install Dependencies:
+3. Install Dependencies:
+   
    pip install -r requirements.txt
 
 Required packages:
+
 torch
+
 torchvision
+
 streamlit
+
 numpy
+
 matplotlib
+
 scikit-image
+
 imagehash
 
+
 3. How to run the application:
+   
    streamlit run app.py
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 HOW DETECTION WORKS
@@ -98,31 +120,42 @@ HOW DETECTION WORKS
 MODEL DETAILS
 
 Training Type: Supervised Learning
+
 Loss Function: Cross-Entropy Loss
+
 Optimizer: Adam
+
 Input Size: 224×224 (cropped patches)
+
 Accuracy: ~98–99% on validation set
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 KNOWN LIMMITATIONS
 
 Model performance depends on alignment with golden PCB
+
 Dataset imbalance may bias predictions
+
 Industrial lighting variations can affect SSIM
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 FUTURE IMPROVEMENTS
 
 Replace sliding-window approach with YOLO-based detection
+
 Add real-time camera inspection support
+
 Deploy as cloud-based API
+
 Improve robustness with data augmentation
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 AUTHOR
 
 Yuvraj Makani
+
 AI/ML Intern
+
 PCB Defect Detection | Computer Vision | Deep Learning
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
