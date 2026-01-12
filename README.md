@@ -55,8 +55,7 @@ PROJECT STRUCTURE
 
 Website/
 
-├── app.py  
-# Streamlit web application
+├── app.py  # Streamlit web application
 
 ├── inference_new.py           # Inference & detection pipeline
 
@@ -66,11 +65,9 @@ Data prep
 
 Model/
 
-|── model.ipynb  
-# Model Training
+|── model.ipynb                # Model Training
 
-|── Inference.ipynb 
-# Model Testing
+|── Inference.ipynb            # Model Testing
 
 
 |── README.md
