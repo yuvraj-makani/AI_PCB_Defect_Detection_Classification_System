@@ -25,10 +25,10 @@ The system follows a two-stage hybrid approach:
    a) Perceptual Hashing (pHash)
    b) Structural Similarity Index (SSIM)
    c) Identifies suspicious regions by comparing input PCB with a golden reference PCB
-
 2️. Deep Learning Classification
    a) CNN-based model (EfficientNet-B0 / ResNet-50)
    b) Classifies the detected abnormal regions into defect categories
+   
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 TECH STACK
 
@@ -41,6 +41,7 @@ TECH STACK
 | Web Framework    | Streamlit                  |
 | Image Processing | PIL, torchvision           |
 | Deployment       | Local (Windows/Linux)      |
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 PROJECT STRUCTURE
 
@@ -56,6 +57,7 @@ Model/
 |── Inference.ipynb            # Model Testing
 
 |── README.md
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSTALLATION & SETUP
 
@@ -93,12 +95,14 @@ Loss Function: Cross-Entropy Loss
 Optimizer: Adam
 Input Size: 224×224 (cropped patches)
 Accuracy: ~98–99% on validation set
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 KNOWN LIMMITATIONS
 
 Model performance depends on alignment with golden PCB
 Dataset imbalance may bias predictions
 Industrial lighting variations can affect SSIM
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 FUTURE IMPROVEMENTS
 
@@ -106,15 +110,18 @@ Replace sliding-window approach with YOLO-based detection
 Add real-time camera inspection support
 Deploy as cloud-based API
 Improve robustness with data augmentation
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 AUTHOR
 
 Yuvraj Makani
 AI/ML Intern
 PCB Defect Detection | Computer Vision | Deep Learning
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 LICENSE
 
 This project is intended for academic and research purposes.
 For commercial use, please contact the author.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
